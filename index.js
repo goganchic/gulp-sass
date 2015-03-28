@@ -96,6 +96,8 @@ module.exports = function (options) {
 
   return map(sass);
 };
+module.exports.types = nodeSass.types;
+
 
 function handleOutput(output, file, cb) {
   file.path = ext(file.path, '.css');
